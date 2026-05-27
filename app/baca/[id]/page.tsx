@@ -40,6 +40,13 @@ export default function BacaBuku({ params }: { params: { id: string } }) {
         allowFullScreen
         scrolling="no"
       ></iframe>
+      {/* Tombol Selesai & Kuis Melayang di Kanan Bawah */}
+      <Link 
+        href={`/kuis/${book.id}`} 
+        className="absolute bottom-6 right-6 z-50 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full font-extrabold shadow-[0_10px_25px_rgba(6,182,212,0.5)] border-2 border-white transition-all transform hover:scale-105 animate-bounce flex items-center gap-2"
+      >
+        Selesai & Main Kuis 🏆
+      </Link>
     </main>
   );
 }

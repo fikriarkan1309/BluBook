@@ -1,5 +1,3 @@
-// data/books.ts
-
 // 1. Data Tema (Folder)
 export const themes = [
   { id: "adab", title: "Seri Adab & Kebaikan", cover: "/images/cover tema adab.png", isPremium: false },
@@ -7,7 +5,6 @@ export const themes = [
   { id: "sholeh", title: "Seri Anak Sholeh", cover: "/images/cover tema anak sholeh.png", isPremium: false },
   { id: "emosi", title: "Seri Kelola Emosi", cover: "/images/cover tema emosi.png", isPremium: false },
   { id: "eksplorasi", title: "Seri Pengetahuan", cover: "/images/cover tema eksplorasi.png", isPremium: false },
-  // Contoh tema berbayar (Paywall)
   { id: "premium1", title: "Seri Petualangan Luar Angkasa", cover: "/images/cover tema angkasa.png", isPremium: true },
 ];
 
@@ -16,8 +13,17 @@ export const books = [
   {
     id: "piko-selendang-biru",
     title: "Petualangan Piko",
-    coverUrl: "/images/cover buku adab 1.jpg", // Pakai cover baru
-    themeId: "adab", // Nyambung ke folder Adab
-    iframeUrl: "https://heyzine.com/flip-book/513e1e0c4a.html" 
+    coverUrl: "/images/cover buku adab 1.jpg", 
+    themeId: "adab", 
+    iframeUrl: "https://heyzine.com/flip-book/513e1e0c4a.html", // Ingat ganti pakai link asli Heyzine lo
+    quiz: {
+      question: "Di cerita tadi, kenapa Piko akhirnya mau membagikan buah berinya kepada teman-teman?",
+      options: [
+        "Karena perut Piko sudah terlalu kenyang", 
+        "Karena berbagi dengan teman membuat hati jadi senang", 
+        "Karena Piko sebenarnya tidak suka buah beri"
+      ],
+      answer: "Karena berbagi dengan teman membuat hati jadi senang"
+    }
   }
 ];
