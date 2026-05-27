@@ -25,5 +25,22 @@ export const books = [
       ],
       answer: "Karena berbagi dengan teman membuat hati jadi senang"
     }
+  },
+
+  {
+    id: "maafkan-aku-owi", // ID unik, pakai huruf kecil dan strip
+    title: "Maafkan Aku, Owi",
+    coverUrl: "/images/cover buku adab 2.jpg", // Sesuaikan dengan nama file gambar cover di langkah 1
+    themeId: "adab", // Masih masuk ke folder "Seri Adab & Kebaikan"
+    iframeUrl: "https://heyzine.com/flip-book/b738fda7be.html", // Paste link Heyzine buku Owi di sini
+    quiz: {
+      question: "Apa yang dilakukan Piko setelah tahu ia berbuat salah kepada Owi?",
+      options: [
+        "Piko lari bersembunyi ketakutan",
+        "Piko berani dan jujur untuk meminta maaf",
+        "Piko pura-pura tidak tahu"
+      ],
+      answer: "Piko berani dan jujur untuk meminta maaf"
+    }
   }
 ];
